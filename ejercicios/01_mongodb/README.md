@@ -1,6 +1,6 @@
 <img src="http://blog.findemor.es/wp-content/uploads/2015/06/mongodb.png" align="right" height="200px" />
 
-#Exercise 01 - MongoDB
+#Ejercicio 01 - MongoDB
 
 Para poder hacer este ejercicio deberías haber leído y entendido antes los siguientes ejemplos:
 
