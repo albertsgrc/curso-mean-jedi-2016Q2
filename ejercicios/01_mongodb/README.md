@@ -69,7 +69,7 @@ con `mongorestore ./base_datos`, tal y como se indica en el apartado de Introduc
 
 En todos los casos, si el usuario o tarea no tiene alguno de los atributos por los que se filtra no os preocupéis, asumid el comportamiento por defecto de mongodb en estos casos, que es el que se aceptará. 
 
-Todas las consultas **deben mostrarse en formato legible** (operación `.pretty()` si es necesaria).
+Todas las consultas **deben mostrarse en formato legible** (método `.pretty()` si es necesaria).
 
 - **2.1**: Lista todos los usuarios
 - **2.2**: Lista todos los usuarios con nombre 'Maria'
@@ -80,7 +80,7 @@ Todas las consultas **deben mostrarse en formato legible** (operación `.pretty(
 - **2.7**: Lista todos los usuarios que no son del departamento "Marketing" y que tienen edad mayor o igual a 20
 - **2.8**: Lista todos los usuarios que tengan edad 30, 25 o 16 (ver operador [$in](https://docs.mongodb.org/v3.0/reference/operator/query/in/))
 - **2.9**: Lista todos los usuarios que tengan entre sus habilidades "mongodb" (ver [link](http://stackoverflow.com/questions/5366687/how-to-check-if-an-array-field-contains-a-unique-value-or-another-array-in-mongo))
-- **2.10**: Obtiene la única tarea con nombre "Limpiar el suelo". No podéis usar la operación `find()`. Pista: Hay otra que también empieza por find y que hace lo que se pide
+- **2.10**: Obtiene la única tarea con nombre "Limpiar el suelo". No podéis usar el método `find()`. Pista: Hay otra que también empieza por find y que hace lo que se pide
 - **2.11**: Obtiene el único usuario con _id `56a2a3ef43e14e025b742bbc`. Notad que el atributo `_id` **no tiene tipo `String`**.
 - **2.12**: Lista todos los usuarios con fecha de último casamiento posterior o igual a la actual. Fecha se refiere al tipo `Date` de mongodb, no a fecha como día/mes/año
 - **2.13**: Lista todos los usuarios con fecha de último casamiento anterior a la actual
