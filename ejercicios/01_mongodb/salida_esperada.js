@@ -106,23 +106,10 @@
 
 // 2.4
 {
-    "_id" : ObjectId("56a2a42d43e14e025b742bbd"),
-    "nombre" : "Gabriel",
-    "edad" : 30,
-    "departamento" : "Formación",
-    "estado_animo" : "triste",
-    "habilidades" : [
-        "c",
-        "mongodb"
-    ]
+    "nombre" : "Gabriel"
 }
 {
-    "_id" : ObjectId("56a2b59b473bbc9549c54a12"),
-    "nombre" : "Sergio",
-    "edad" : 35,
-    "esta_casado" : true,
-    "fecha_ultimo_casamiento" : ISODate("fecha_de_insercion (la que sea)"),
-    "departamento" : "RRHH"
+    "nombre" : "Sergio"
 }
 
 
@@ -130,26 +117,22 @@
 {
     "_id" : ObjectId("56a2a3bb43e14e025b742bbb"),
     "nombre" : "Maria",
-    "edad" : 25,
     "departamento" : "Marketing"
 }
 {
     "_id" : ObjectId("56a2a3ef43e14e025b742bbc"),
     "nombre" : "Albert",
-    "edad" : 23,
     "departamento" : "Marketing",
     "estado_animo" : "contento",
     "habilidades" : [ ]
 }
 {
     "_id" : ObjectId("56a2a6e743e14e025b742bbf"),
-    "nombre" : "h4x0r",
-    "edad" : 22
+    "nombre" : "h4x0r"
 }
 {
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
-    "edad" : 22,
     "estado_animo" : "contenta",
     "habilidades" : [
         "node",

@@ -74,8 +74,8 @@ Todas las consultas **deben mostrarse en formato legible** (operación `.pretty(
 - **2.1**: Lista todos los usuarios
 - **2.2**: Lista todos los usuarios con nombre 'Maria'
 - **2.3**: Lista todos los usuarios con estado de ánimo 'contento' o 'contenta'
-- **2.4**: Lista todos los usuarios con edad mayor a 25
-- **2.5**: Lista todos los usuarios con edad entre 20 y 25 ambos incluidos
+- **2.4**: Lista todos los usuarios con edad mayor a 25. Para cada usuario **sólo hay que mostrar el atributo `nombre`**.
+- **2.5**: Lista todos los usuarios con edad entre 20 y 25 ambos incluidos. Para cada usuario **hay que mostrar todos los atributos excepto la `edad`**.
 - **2.6**: Lista todos los usuarios ordenados decrecientemente por su edad 
 - **2.7**: Lista todos los usuarios que no son del departamento "Marketing" y que tienen edad mayor o igual a 20
 - **2.8**: Lista todos los usuarios que tengan edad 30, 25 o 16 (ver operador [$in](https://docs.mongodb.org/v3.0/reference/operator/query/in/))

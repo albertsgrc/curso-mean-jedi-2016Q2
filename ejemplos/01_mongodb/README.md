@@ -124,7 +124,7 @@ Cualquier objeto que tenga algún atributo que empiece con `$` se considera un o
 son dichos atributos.
 
 ```javascript
-// Asigna el valor 27 al atributo age del primer documento con name === admin. 
+// Asigna el valor 27 al atributo age del primer documento con name === 'admin'. 
 // Si el documento no tenía el atributo age entonces lo crea y lo asigna, 
 // si ya lo tenia cambia su valor.
 db.users.update({ name: 'admin' }, { $set: { age: 27 } })
@@ -141,7 +141,7 @@ Visita https://docs.mongodb.org/manual/reference/operator/update/ para ver una l
 db.users.update({ name: 'admin' }, { age: 10 })
 ```
 
-El primer documento con atributo `name = 'admin'` será reemplazado por el documento `{ age: 10 }`, y todos los demás atributos que tenga el documento encontrado **serán borrados**. 
+El primer documento con atributo `name === 'admin'` será reemplazado por el documento `{ age: 10 }`, y todos los demás atributos que tenga el documento encontrado **serán borrados**. 
 
 Para especificar que queremos modificar todos los documentos que cumplan la consulta en vez de sólo el primero, podemos pasar la opción `multi`:
 
