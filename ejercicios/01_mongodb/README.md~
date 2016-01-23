@@ -30,7 +30,7 @@ Sobre la base de datos cargada, escribe una operación de mongodb para cada uno 
 
 Podéis probar las operaciones que programéis una a una con el intérprete de mongodb, pero tened en cuenta que:
 
-**Deberéis subir en la entrega correspondiente del [moodle](http://padawan.jediupc.com/moodle/mod/assign/view.php?id=159) todas las operaciones en un fichero con extensión `.js`, y en el mismo orden en el que aparecen sus respectivos enunciados aquí.**
+**Deberéis subir en la entrega correspondiente del [moodle]() todas las operaciones en un fichero con extensión `.js`, y en el mismo orden en el que aparecen sus respectivos enunciados aquí.**
 
 Si quieres resetear la base de datos y volverla a cargar puedes escribir el comando `db.dropDatabase()`
 en el intérprete de mongo, habiendo antes ejecutado `use ejercicio_01` para borrarla, y repetir la carga
