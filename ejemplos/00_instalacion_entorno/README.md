@@ -6,7 +6,9 @@ Este ejemplo consiste únicamente de este readme, con instrucciones para instala
 
 ### Mac OS X
 
-La mejor opción para instalar MongoDB en Mac es usar Homebrew (http://brew.sh/)
+La mejor opción para instalar MongoDB en Mac es usar Homebrew (http://brew.sh/), lo podéis descargar con éste comando.
+
+```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 
 1. Actualizar Homebrew
 
