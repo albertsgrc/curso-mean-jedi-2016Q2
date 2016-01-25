@@ -362,7 +362,7 @@
 {
     "_id" : ObjectId("56a2a6d043e14e025b742bbe"),
     "nombre" : "h4x0r",
-    "estado_animo" : "radiante"
+    "estado_animo" : "radiante" // Si aquí no aparece este atributo también es válido
 }
 
 
