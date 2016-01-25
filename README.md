@@ -9,5 +9,5 @@ En este repositorio encontraréis variedad de ejemplos del temario que se explic
 
 También encontraréis en este repositorio el enunciado de los ejercicios que deberéis entregar durante el curso en el [moodle](http://padawan.jediupc.com/moodle/course/view.php?id=10).
 
-No dudéis en contactar con nosotros (cursomean@jediupc.com) para cualquier duda o problema!
+No dudéis en contactar con nosotros mediante el correo mean@cursos.jediupc.com para cualquier duda, problema o corrección!
 
