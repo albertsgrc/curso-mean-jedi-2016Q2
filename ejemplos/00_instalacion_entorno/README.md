@@ -4,6 +4,8 @@ Este ejemplo consiste únicamente de este readme, con instrucciones para instala
 
 ## Instalación MongoDB
 
+**Preferible instalar v3.2.1**
+
 ### Mac OS X
 
 La mejor opción para instalar MongoDB en Mac es usar Homebrew (http://brew.sh/), lo podéis descargar con éste comando.
