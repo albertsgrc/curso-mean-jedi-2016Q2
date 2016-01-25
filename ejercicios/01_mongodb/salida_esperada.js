@@ -41,6 +41,7 @@
 {
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
+    "departamento" : "Formación",
     "edad" : 22,
     "estado_animo" : "contenta",
     "habilidades" : [
@@ -70,6 +71,7 @@
 {
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
+    "departamento" : "Formación",
     "edad" : 22,
     "estado_animo" : "contenta",
     "habilidades" : [
@@ -94,6 +96,7 @@
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
     "edad" : 22,
+    "departamento" : "Formación",
     "estado_animo" : "contenta",
     "habilidades" : [
         "node",
@@ -134,6 +137,7 @@
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
     "estado_animo" : "contenta",
+    "departamento" : "Formación",
     "habilidades" : [
         "node",
         "c++",
@@ -186,6 +190,7 @@
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
     "edad" : 22,
+    "departamento" : "Formación",
     "estado_animo" : "contenta",
     "habilidades" : [
         "node",
@@ -224,6 +229,7 @@
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
     "edad" : 22,
+    "departamento" : "Formación",
     "estado_animo" : "contenta",
     "habilidades" : [
         "node",
@@ -344,6 +350,7 @@
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
     "edad" : 22,
+    "departamento" : "Formación",
     "estado_animo" : "radiante",
     "habilidades" : [
         "node",
