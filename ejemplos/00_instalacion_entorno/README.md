@@ -84,6 +84,8 @@ Sigue uno de estos tutoriales, en función de tu distribución:
 
 ## Instalación Node.js
 
+**Preferible instalar versión LTS (v4.2.6)**
+
 ### Mac OS X
 
 Del mismo modo que con MongoDB, se puede usar Homebrew para instalar Node:
