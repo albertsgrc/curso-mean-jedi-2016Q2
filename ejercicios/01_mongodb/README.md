@@ -94,7 +94,7 @@ Todas las consultas **deben mostrarse en formato legible** (método `.pretty()` 
 
 #### 4. Borrado:
 
-- **4.1**: Elimina un único usuario con nombre "h4x0r" (el primero que encuentre mongodb)
+- **4.1**: Elimina un único usuario con nombre "h4x0r" (el primero que mongodb encuentre)
 - **4.2**: Elimina todos los usuarios con edad mayor a 29
 
 En el fichero `salida_esperada.js` tenéis la salida que se espera para cada una de las operaciones de consulta, y dada una operación `.find()` en cada una de las colecciones una vez finalizadas todas las operaciones. Obviamente los valores de los atributos `_id` para documentos que hayáis insertado vosotros serán diferentes, ya que mongodb los genera en función de la fecha, la máquina, el id del proceso y un valor aleatorio. También será diferente la fecha de último casamiento, ya que depende de cuando hagáis la inserción.
