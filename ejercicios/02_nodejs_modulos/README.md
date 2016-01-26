@@ -1,4 +1,4 @@
-# Ejercicio 03 - Módulos en Node.js
+# Ejercicio 02 - Módulos en Node.js
 
 <p align="center"><img src="http://fotos.subefotos.com/f93159a70d819823ec03791b4bb8d2aco.jpg" height="200px"></p>
 

@@ -1,9 +1,10 @@
-# Exercise 02 - MongoDB, Node.JS
+# Ejercicio 03 - MongoDB, Node.JS
+
 <img src="http://1.bp.blogspot.com/-piBAUOhu13w/Um1f7-Q72-I/AAAAAAAAHk0/TPyPz2wNmDM/s1600/lightsabers_big1%5B1%5D.jpg" align="right" height="250px">
 Este ejercicio hace referencia a los siguientes ejemplos:
 
 [02_node_modulos](https://github.com/albertsgrc/curso-mean-jedi/tree/master/ejemplos/02_node_modulos)<br>
-[02_node_y_mongodb](https://github.com/albertsgrc/curso-mean-jedi/tree/master/ejemplos/02_node_y_mongodb)
+[03_node_y_mongodb](https://github.com/albertsgrc/curso-mean-jedi/tree/master/ejemplos/03_node_y_mongodb)
 
 ### Introducción:
 
