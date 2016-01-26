@@ -4,7 +4,7 @@
 
 Para poder hacer este ejercicio deberías haber leído y entendido antes los siguientes ejemplos:
 
-* [01_mongodb](https://github.com/albertsgrc/curso-mean-jedi/tree/master/ejemplos/01_mongodb) 
+* [01_mongodb](https://github.com/albertsgrc/jedi-mean-course/blob/master/Examples/01_mongodb) 
 
 ## Introducción:
 
