@@ -166,3 +166,13 @@ situados en la carpeta de nuestro proyecto. Automáticamente se agregará el mó
 Para poder crear fácilmente un fichero `package.json` en la carpeta que os encontréis, podéis ejecutar el comando `npm init`, que os hará ciertas preguntas sobre vuestro proyecto y irá rellenando el fichero `package.json` con la información.
 
 Si queréis saber el significado de cada uno de los atributos del fichero package.json, en [este](http://browsenpm.org/package.json) enlace tenéis la explicación de cada atributo y un listado de todos los atributos disponibles.
+
+
+## Ejemplo
+
+En este ejemplo podréis encontrar un programa `gestor.js` que escribe por pantalla el contenido de la carpeta ficheros (todos sus archivos) y que escribe su propio código.
+
+Para poder usarlo deberéis ejecutar `npm install` para instalar sus dependencias, y luego ejecutar `node gestor.js` para ejecutar el programa.
+
+Como podréis ver, el programa también usa un módulo que hemos definido nosotros, y que está en la carpeta `gestor_ficheros`. Este módulo es el que implementa las funciones para leer un fichero dado su camino y para listar los fichero de una carpeta. Además, usa un módulo que lleva por defecto node y que sirve para gestionar ficheros. Se llama `fs` (filesystem) y lo utilizamos para implementar las funciones del módulo `gestor_ficheros`.
+

@@ -1,0 +1,14 @@
+{
+  "name": "gestor_ficheros",
+  "version": "1.0.0",
+  "description": "Módulo para listar y leer ficheros",
+  "main": "gestor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Albert Segarra",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}
