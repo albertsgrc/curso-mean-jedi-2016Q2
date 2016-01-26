@@ -34,7 +34,7 @@ function checkConnectedToDB(res) {
 }
 
 function checkUrlPath(path, res) {
-    var isCorrect = path === '/lightsaber';
+    var isCorrect = path === '/students';
     if (!isCorrect) res.end("Wrong url!");
     return isCorrect;
 }
