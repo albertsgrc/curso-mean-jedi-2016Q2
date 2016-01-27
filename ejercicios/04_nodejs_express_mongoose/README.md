@@ -1,4 +1,13 @@
 # Ejercicio 04 - Node.js, Express, Mongoose
+Este ejercicio hace referencia a los siguientes ejemplos:
+
+[04_node_mongoose_y_async](https://github.com/albertsgrc/curso-mean-jedi/tree/master/ejemplos/04_node_mongoose_y_async)
+
+[05_express](https://github.com/albertsgrc/curso-mean-jedi/tree/master/ejemplos/05_express)
+
+[06_express_routers](https://github.com/albertsgrc/curso-mean-jedi/tree/master/ejemplos/06_express_routers)
+
+[07_express_con_mongoose](https://github.com/albertsgrc/curso-mean-jedi/tree/master/ejemplos/07_express_con_mongoose)
 
 # Introducción
 Los propietarios de Pccomponentes.com han contactado con nosotros para que les montemos una API para su tienda, con el fin de tener control sobre todo lo que ocurre en ella.
