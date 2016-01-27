@@ -58,7 +58,7 @@ En la ruta para el usuario deberemos:
 
 En la ruta para el administrador debemos:
 - Ver todos los usuarios. GET: ```localhost:8080/admin/listaUsuarios```
-- Añadir un producto. POST: ```localhost:8080/admin/anadirProducto/<id_del_producto>``` (Pasaremos la información del producto por el Body)
+- Añadir un producto. POST: ```localhost:8080/admin/anadirProducto/``` (Pasaremos la información del producto por el Body)
 - Borrar un producto. DELETE: ```localhost:8080/admin/borrarProducto/<id_del_producto>``` 
 - Actualizar un producto. PATCH: ```localhost:8080/admin/actualizarProducto/<id_del_producto>``` (Pasaremos la información del producto por el Body)
 
