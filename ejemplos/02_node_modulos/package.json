@@ -4,6 +4,7 @@
   "description": "Módulo para listar y leer ficheros",
   "main": "gestor.js",
   "scripts": {
+    "start": "node gestor.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Albert Segarra",
