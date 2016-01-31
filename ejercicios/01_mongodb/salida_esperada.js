@@ -41,9 +41,9 @@
 {
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
-    "departamento" : "Formación",
     "edad" : 22,
     "estado_animo" : "contenta",
+    "departamento" : "Formación",
     "habilidades" : [
         "node",
         "c++",
@@ -71,9 +71,9 @@
 {
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
-    "departamento" : "Formación",
     "edad" : 22,
     "estado_animo" : "contenta",
+    "departamento" : "Formación",
     "habilidades" : [
         "node",
         "c++",
@@ -96,8 +96,8 @@
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
     "edad" : 22,
-    "departamento" : "Formación",
     "estado_animo" : "contenta",
+    "departamento" : "Formación",
     "habilidades" : [
         "node",
         "c++",
@@ -108,13 +108,8 @@
 
 
 // 2.4
-{
-    "nombre" : "Gabriel"
-}
-{
-    "nombre" : "Sergio"
-}
-
+{ "_id" : ObjectId("56a2a42d43e14e025b742bbd"), "nombre" : "Gabriel" }
+{ "_id" : ObjectId("56ae07b6fe8df75783157d45"), "nombre" : "Sergio" }
 
 // 2.5
 {
@@ -229,8 +224,8 @@
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
     "edad" : 22,
-    "departamento" : "Formación",
     "estado_animo" : "contenta",
+    "departamento" : "Formación",
     "habilidades" : [
         "node",
         "c++",
@@ -350,8 +345,8 @@
     "_id" : ObjectId("56a2b518473bbc9549c54a11"),
     "nombre" : "Maria",
     "edad" : 22,
-    "departamento" : "Formación",
     "estado_animo" : "radiante",
+    "departamento" : "Formación",
     "habilidades" : [
         "node",
         "c++",
@@ -362,7 +357,8 @@
 {
     "_id" : ObjectId("56a2a6d043e14e025b742bbe"),
     "nombre" : "h4x0r",
-    "estado_animo" : "radiante" // Si aquí no aparece este atributo también es válido
+    "estado_animo" : "radiante" 
+    // Si tiene atributo edad: 22 también es válido
 }
 
 
