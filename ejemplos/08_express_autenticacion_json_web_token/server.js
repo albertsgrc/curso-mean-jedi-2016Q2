@@ -3,9 +3,6 @@ var bodyParser = require('body-parser');
 var http = require('http');
 var mongoose = require('mongoose');
 
-// Módulo que usaremos para obtener el middleware de la autenticación
-var express_jwt = require('express-jwt');
-
 var models = require('./models');
 
 // config.js es un fichero con constantes
