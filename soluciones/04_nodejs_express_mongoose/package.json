@@ -1,0 +1,19 @@
+{
+  "name": "pccomponentesapi",
+  "version": "1.0.0",
+  "description": "API para la tienda de PCComponentes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Albert Segarra Roca",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.14.2",
+    "colors": "^1.1.2",
+    "express": "^4.13.4",
+    "express-winston": "^1.2.0",
+    "mongoose": "^4.3.7"
+  }
+}
