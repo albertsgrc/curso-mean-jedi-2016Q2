@@ -1,0 +1,18 @@
+<md-content flex layout="column" layout-fill>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>
+        <span>Random</span>
+      </h2>
+      <span flex></span>
+    </div>
+  </md-toolbar>
+  <md-tabs md-selected="selectedIndex" md-border-bottom md-autoselect flex layout="column" layout-fill>
+    <md-tab ng-repeat="tab in tabs"
+            label="{{tab.title}}">
+      <div class="demo-tab tab{{$index%4}}" style="padding: 25px; text-align: center;">
+        <div></div> <!-- En este div va el ui-view -->
+      </div>
+    </md-tab>
+  </md-tabs>
+</md-content>
