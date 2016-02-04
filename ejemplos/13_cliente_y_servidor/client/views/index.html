@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-aria/angular-aria.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-material/angular-material.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="/app.js"></script>
+    <script src="/routing.js"></script>
+
+    <script src="/controllers/layout-ctrl.js"></script>
+    <script src="/controllers/login-ctrl.js"></script>
+    <script src="/controllers/tareas-ctrl.js"></script>
+
+    <script src="/services/login-service.js"></script>
+    <script src="/services/toast-service.js"></script>
+    <script src="/services/tareas-service.js"></script>
+    <script src="/services/auth-interceptor.js"></script>
+
+    <title>Gestor de Tareas</title>
+</head>
+<body ui-view ng-app="TareasApp" ng-cloak>
+
+</body>
+</html>

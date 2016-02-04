@@ -1,0 +1,32 @@
+<div layout="column" flex id="content" role="main">
+  <md-content layout="vertical" flex id="content">
+    <div layout="row" layout-align="center center" layout-fill>
+      <md-whiteframe class="md-whiteframe-z1" layout="column" flex="30" layout-padding>
+        <md-content md-theme="docs-dark">
+          <form name="loginRegisterForm" layout="column" layout-align="center center">
+            <md-input-container>
+              <label>Username</label>
+              <input required="required" name="username" ng-model="user.username">
+              <div ng-messages="loginRegisterForm.username.$error" ng-if="loginRegisterForm.username.$dirty && loginRegisterForm.username.$invalid">
+                <div ng-message="required">Rellena el campo</div>
+              </div>
+            </md-input-container>
+            <md-input-container>
+              <label>Password</label>
+              <input required="required" name="password" ng-model="user.password" type="password">
+              <div ng-messages="loginRegisterForm.password.$error" ng-if="loginRegisterForm.password.$dirty && loginRegisterForm.password.$invalid">
+                <div ng-message="required">Rellena el campo</div>
+              </div>
+            </md-input-container>
+            <md-input-container layout-align="center center">
+              <div layout="row" layout-sm="column" layout-margin>
+                <md-button ng-disabled="loginRegisterForm.$invalid" class="md-raised" flex="50" flex-sm="100" ng-click="login()">Login</md-button>
+                <md-button ng-disabled="loginRegisterForm.$invalid" class="md-raised md-primary" flex="50" flex-sm="100" ng-click="register()">Registro</md-button>
+              </div>
+            </md-input-container>
+          </form>
+        </md-content>
+      </md-whiteframe>
+    </div>
+  </md-content>
+</div>
