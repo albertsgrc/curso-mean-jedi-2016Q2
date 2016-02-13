@@ -30,7 +30,7 @@ TareasService = function($http, $q, LoginService) {
 
         // Si no está logueado damos error (no debería pasar ya que si 
         // llegamos aquí es porque estamos logueados)
-        if (!LoginService.isLoggedIn()) return q.reject();
+        if (!LoginService.isLoggedIn()) q.reject();
         else LoginService.getUser().then(
             // getUser de LoginService devuelve una promise, por lo que hay que usar then
             function(user) {

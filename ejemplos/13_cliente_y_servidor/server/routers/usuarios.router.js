@@ -121,7 +121,7 @@ router.delete('/tareas/:id', function(req, res) {
 
     // Eliminamos la tarea con _id = req.params.id
     // del array de tareas
-    var update = { $pull: { "tareas._id": req.params.id } };
+    var update = { $pull: { tareas: { _id: req.params.id } } };
 
     // Explicado más arriba
     var options = { 'new': true };

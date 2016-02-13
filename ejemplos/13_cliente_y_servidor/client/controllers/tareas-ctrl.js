@@ -55,7 +55,7 @@ var TareasCtrl = function($scope, TareasService, ToastService, $mdDialog) {
     $scope.mostrarDialogTarea = function(event) {
         $mdDialog.show({
             controller: 'createTareaDialogController',
-            templateUrl: 'views/partials/add-task.html',
+            templateUrl: 'views/partials/auth_protected/add-task.html',
             parent: angular.element(document.body),
             targetEvent: event
         });

@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var colors = require('colors');
 var compression = require('compression');
 var cors = require('cors');
+var express_jwt = require('express-jwt');
 
 // Config require, models init and routes require
 
@@ -43,6 +44,9 @@ app.use(cors());
 
 // Middleware para parsear el body (req.body) en un objeto javascript
 app.use(bodyParser.json());
+
+// Este middleware proteje los ficheros de partials que requieren de autenticación
+app.get('/views/partials/auth_protected/*', express_jwt({ secret: config.JWT_SECRET }));
 
 // Con este middleware que nos da express
 // podemos servir los ficheros del cliente, de modo que cuando iniciemos
