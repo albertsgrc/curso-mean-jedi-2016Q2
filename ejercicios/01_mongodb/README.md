@@ -4,7 +4,7 @@
 
 Para poder hacer este ejercicio deberías haber leído y entendido antes los siguientes ejemplos:
 
-* [01_mongodb](https://github.com/albertsgrc/jedi-mean-course/blob/master/Examples/01_mongodb) 
+* [01_mongodb](https://github.com/albertsgrc/curso-mean-jedi-2016Q2/blob/master/ejemplos/01_mongodb)
 
 ## Introducción:
 
@@ -41,7 +41,7 @@ con `mongorestore ./base_datos`, tal y como se indica en el apartado de Introduc
 - **1.1**: Crea un nuevo documento sobre la colección `usuarios` con los siguientes atributos y valores:
     * `nombre: "Maria"` (String)
     * `edad: 22` (Number)
-    * `estado_animo: "contenta"` (String) 
+    * `estado_animo: "contenta"` (String)
     * `departamento: "Formación"` (String)
     * `habilidades: ["node", "c++", "c", "swift"]` (Array de Strings)
 
@@ -55,8 +55,8 @@ con `mongorestore ./base_datos`, tal y como se indica en el apartado de Introduc
 - **1.3**: Crea un nuevo documento sobre la colección `tareas`:
     * `nombre: "Arreglar la bici"` (String)
     * `encargados: [
-         { nombre: "Alberto", obligado: false }, 
-         { nombre: "Fabian", obligado: true }, 
+         { nombre: "Alberto", obligado: false },
+         { nombre: "Fabian", obligado: true },
          { nombre: "Peter", obligado: false }
        ]` (Array de objetos)
 
@@ -67,7 +67,7 @@ con `mongorestore ./base_datos`, tal y como se indica en el apartado de Introduc
 
 #### 2. Consulta:
 
-En todos los casos, si el usuario o tarea no tiene alguno de los atributos por los que se filtra no os preocupéis, asumid el comportamiento por defecto de mongodb en estos casos, que es el que se aceptará. 
+En todos los casos, si el usuario o tarea no tiene alguno de los atributos por los que se filtra no os preocupéis, asumid el comportamiento por defecto de mongodb en estos casos, que es el que se aceptará.
 
 Todas las consultas **deben mostrarse en formato legible** (método `.pretty()` si es necesaria).
 
@@ -76,7 +76,7 @@ Todas las consultas **deben mostrarse en formato legible** (método `.pretty()` 
 - **2.3**: Lista todos los usuarios con estado de ánimo 'contento' o 'contenta'
 - **2.4**: Lista todos los usuarios con edad mayor a 25. Para cada usuario **sólo hay que mostrar el atributo `nombre`**.
 - **2.5**: Lista todos los usuarios con edad entre 20 y 25 ambos incluidos. Para cada usuario **hay que mostrar todos los atributos excepto la `edad`**.
-- **2.6**: Lista todos los usuarios ordenados decrecientemente por su edad 
+- **2.6**: Lista todos los usuarios ordenados decrecientemente por su edad
 - **2.7**: Lista todos los usuarios que no son del departamento "Marketing" y que tienen edad mayor o igual a 20
 - **2.8**: Lista todos los usuarios que tengan edad 30, 25 o 16 (ver operador [$in](https://docs.mongodb.org/v3.0/reference/operator/query/in/))
 - **2.9**: Lista todos los usuarios que tengan entre sus habilidades "mongodb" (ver [link](http://stackoverflow.com/questions/5366687/how-to-check-if-an-array-field-contains-a-unique-value-or-another-array-in-mongo))
