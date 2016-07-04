@@ -17,26 +17,20 @@ var User = mongoose.model('User');
    un error de autenticación y no llamará a next(), por lo que no se va a
    ejecutar la función final que obtiene los usuarios
  */
-userRouter.get('/', express_jwt({secret: jwt_secret, requestProperty: 'usuario'}), function(req, res, next) {
-  // Notad que express_jwt, el middleware que hemos puesto para esta ruta
-  // nos asigna el valor de req.usuario al objeto que hayamos codificado en el token,
-  // en este caso el documento entero del usuario. Es req.usuario y no req.otracosa
-  // por el string que le hemos especificado en el objeto que le pasamos al
-  // middleware justo arriba (requestProperty: 'usuario'). Si no especificamos
-  // esta opción se pone por defecto en req.user
-  
-  // Si es admin
-  console.log(req.usuario);
-  if (req.usuario.is_admin) {
-
-    // Enviamos todos los usuarios
-    User.find({}, function(err, users) {
-      if (err) res.status(500).send(err);
-      else res.status(200).send(users);
-    })
-  } 
-  else res.status(403).send('No tienes acceso a este recurso!');
-});
+userRouter.get('/users',
+    express_jwt({secret: jwt_secret, requestProperty: 'usuario'}),
+    function(req, res, next) {
+      if (req.usuario.is_admin) {
+        User.find({}, function(err, users) {
+          if (err) res.status(500).send(err);
+          else res.status(200).send(users);
+        })
+      }
+      else {
+          res.status(403).send('No tienes acceso a este recurso!');
+      }
+    }
+);
 
 /**
  * Ruta para crear un nuevo usuario
@@ -50,7 +44,7 @@ userRouter.post('/', function(req, res, next) {
 });
 
 /**
- * Ruta para borrar un usuario. Sólo se puede borrar el mismo usuario 
+ * Ruta para borrar un usuario. Sólo se puede borrar el mismo usuario
  * que hace la petición o el admin
  */
 userRouter.delete('/:id', express_jwt({secret: jwt_secret}),function(req, res, next) {
@@ -61,11 +55,11 @@ userRouter.delete('/:id', express_jwt({secret: jwt_secret}),function(req, res, n
         if (user) {
           user.remove();
           res.status(204).end();
-        } 
+        }
         else res.status(404).end();
       }
     })
-  } 
+  }
   else res.status(401).send('No puedes borrar otros usuarios!');
 });
 
