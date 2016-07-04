@@ -1,0 +1,72 @@
+<html>
+
+    <head>
+        <title>Espadas Laser Jedi</title>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script> <!--Angular-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!--Bootstrap css-->
+        <script src="armament.js"></script> <!--JS donde tendremos el modulos y los controladores-->
+    </head>
+
+
+    <body>
+        <div class="container-fluid">
+
+            <!--Formulario-->
+            <h2>Añadir espada laser:</h2>
+            <div class="row">
+                <div class="col-md-4">
+                     <form class="form-group">
+                        <!--Datos del formulari-->
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="modelo" placeholder="Modelo"/> <br>
+                            <input type="text" class="form-control" ng-model="propietario" placeholder="Propietario"/> <br>
+                            <input type="text" class="form-control" ng-model="color" placeholder="Color"/> <br>
+                        </div>
+                        <!--Botones-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success">Añadir</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--Buscador-->
+            <form class="navbar-form navbar-right">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                </div>
+            </form>
+
+
+            <!--Lista-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Nº</th>
+                                <th>Modelo</th>
+                                <th>Propietario</th>
+                                <th>Color</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>ForceBlue</td>
+                                <td>Obi-Wan Kenobi</td>
+                                <td>Azul</td>
+                                <td><div class="btn btn-danger">Borrar</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
