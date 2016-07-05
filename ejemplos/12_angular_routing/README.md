@@ -1,43 +1,25 @@
-#Angular Routing
+# Angular Routing
 
-###URL Routing
-La manera más facil de conseguir un enrutamiento es redirigir una url hacia una template de nuestra aplicación. De esta manera, podemos tener una aplicación de una sola página actuando como una web normal que cambia su contenido.
+En este ejemplo tenéis un página web que permite crear tareas y listarlas. Consta por lo tanto
+de dos páginas, una para crear tareas, y otra para listarlas.
 
-###Estados del enrutamiento 
-Los estados del routing son similares a la funcionalidad de un link (el cual nos redirije a otro sitio), pero nos permite cambiar de estado en nuestra propia apicación si tener que cambiar nuestra url.
+La jerarquía de los estados de la página es la siguiente:
 
-##Usando ui.router para el enrutamiento
-Usaremos un modulo llamado UI Router para hacer el routing. Para importarlo puedes usar su cdn.
+layout
+|
+|
+----tasks
+    |
+    |
+    ----create
+    |
+    |
+    ----show
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+Tenemos un estado general, **layout**, que es el que contiene la barra de navegación con los botones
+que nos envían a cada uno de los dos estados. Notad que este estado es abstracto, ya que no vamos
+a acceder directamente a él sino que lo haremos mediante alguno de sus estados hijos.
 
-###uiView
-Usaremos la directiva uiView donde queramos cargar nuestro contenido. En esa uiView, el ui.router cargará los datos de la template seleccionada.
+Tenemos además un estado hijo de layout, **tasks**, que nos sirve para asociar un controlador `tasksCtrl` que será compartido por los dos estados hijos, **create** y **show**.
 
-    <div ui-view></div>
-
-###uiSref
-La directiva uiSref es la alternativa al clásico `href`, con la diferencia que nos redirigirá a un estado nuestro.
-
-    <a ui-sref="home"></a>
-
-###Configurando los estados
-Para configurar los estados, usaremos config() dentro de nuestro modulo. Fijaron que dependiendo de la ruta, podemos indicar el template y el controller que queremos usar.
-
-    routerApp.config(function($stateProvider, $urlRouterProvider) {
-
-    $urlRouterProvider.otherwise('/home');
-
-    $stateProvider
-        .state('home', {
-            url: '/home',
-            templateUrl: 'partial-home.html'
-            controller: 'homeController'
-        })
-
-        .state('/other', {
-            //We can concatenate creation of states.
-        });
-    });
-
-
+Estos dos estados hijos no tienen controlador (heredan el del padre, **tasksCtrl**), y son los que tienen asociadas las vistas correspondientes a la creación y al listado de tareas (`partials/createTask.html` y `partials/allTasks.html`.)
