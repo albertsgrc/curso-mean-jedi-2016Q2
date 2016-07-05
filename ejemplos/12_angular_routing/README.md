@@ -5,6 +5,7 @@ de dos páginas, una para crear tareas, y otra para listarlas.
 
 La jerarquía de los estados de la página es la siguiente:
 
+```
 layout
 |
 |
@@ -15,6 +16,7 @@ layout
     |
     |
     ----show
+```
 
 Tenemos un estado general, **layout**, que es el que contiene la barra de navegación con los botones
 que nos envían a cada uno de los dos estados. Notad que este estado es abstracto, ya que no vamos
