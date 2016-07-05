@@ -1,0 +1,36 @@
+<div class="col-lg-12">
+
+  <h2>Taskslist</h2>
+
+  <div class="form-group">
+    <label for="search">Search</label>
+    <input type="text" ng-model="search.search" class="form-control" placeholder="Search" name="search" id="search">
+  </div>
+
+  <label>Tasks</label>
+
+    <div class="row">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+            <tr>
+              <th>Nº</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Date</th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody >
+            <tr ng-repeat="task in taskslist | orderBy:'-dueDate'">
+              <td>{{$index+1}}</td>
+              <td>{{task.title}}</td>
+              <td>{{task.description}}</td>
+              <td>{{task.dueDate | date: 'dd/MM/yyyy'}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+    <a ui-sref="taskslist.single"><h3>{{task.title}}</h3></a>
+  </div>
+</div>
