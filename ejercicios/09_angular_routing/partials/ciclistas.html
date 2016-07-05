@@ -1,0 +1,12 @@
+<md-content>
+  <md-list>
+    <md-list-item class="md-3-line" ng-repeat="ciclista in ciclistas">
+      <img ng-src="{{ciclista.foto}}" class="md-avatar" style="width: 60px; height: 60px;" alt="{{ciclista.nombre}}" />
+      <div class="md-list-item-text" layout="column">
+        <h3><b>{{ ciclista.nombre }}</b></h3>
+        <h4>{{ ciclista.tipo }}</h4>
+      </div>
+      <md-divider ng-if="!$last" ></md-divider>
+    </md-list-item>
+  </md-list>
+</md-content>

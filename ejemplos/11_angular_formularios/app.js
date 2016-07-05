@@ -1,13 +1,7 @@
-angular.module('forms', ['ngMessages']).controller('FormController', FormController);
+var App = angular.module('FormsApp', []);
 
-function FormController($scope) {
-  $scope.formData = {
-    showDueDate: false
-  };
-  $scope.today = new Date();
+App.controller('FormsController', ['$scope', function($scope) {
 
-  $scope.createTask = function() {
-    $scope.task = "Created task " + $scope.formData.title;
-    if($scope.formData.showDueDate && $scope.formData.dueDate ) $scope.task += " to do before " + $scope.formData.dueDate.toString();
-  }
-}
+
+
+}]);
