@@ -44,6 +44,7 @@ router.post('/:id_usuario/compra/:id_producto', function(req, res) {
         if (error) {
             console.error(error);
             res.status(500).json(error);
+            return;
         }
 
         var usuario = resultados[0];
