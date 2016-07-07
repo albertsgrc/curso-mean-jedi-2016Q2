@@ -1,0 +1,9 @@
+<md-content>
+    <md-toolbar class="md-tall">
+      <h1 class="md-toolbar-tools">
+        Gestor de Tareas · {{ pageName() }}
+      </h1>
+      <md-button style="float:right" ng-click="logout()" ng-show="showLogout()">Logout</md-button>
+    </md-toolbar>
+</md-content>
+<div ui-view></div>
